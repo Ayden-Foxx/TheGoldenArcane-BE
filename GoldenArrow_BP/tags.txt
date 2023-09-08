@@ -1,0 +1,11 @@
+g_arrow:cursed
+g_arrow:curse_touch
+g_arrow:curse_lift
+
+g_arrow:in_battle
+g_arrow:altar_learned
+g_arrow:altar_summoner
+
+g_arrow:dashing
+g_arrow:lock_tick
+g_arrow:lock_weapon

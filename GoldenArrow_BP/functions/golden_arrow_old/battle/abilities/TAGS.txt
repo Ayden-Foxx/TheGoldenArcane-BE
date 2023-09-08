@@ -1,0 +1,13 @@
+g_arrow:
+
+• dashing - melee/special
+GA is dashing. Invisible, speed increased, damage nullified.
+
+• charge_shots - ranged/primary
+GA replaces Doom Spears with Charged Dooms. These will apply poison, slowness and summon a lightning strike wherever they hit.
+
+• lock_tick - any
+GA's Clock is paused; Functions running will be locked at whatever value the clock was, and no new function will trigger, too.
+
+• lock_weapons - any
+Prevents GA from switching weapons with DANCE OF DANGER. For use with special abilities.
