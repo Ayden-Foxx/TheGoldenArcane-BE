@@ -7,7 +7,7 @@
 # To interact with an Altar, the player must first possess the Golden Curse.
 # The curse marks arrows with its own tag, which allows it to interact with other files.
 
-execute as @a[tag=g_arrow:plr_curse] at @s run tag @e[type=arrow, r=2.3] add g_arrow:curse_touch
+execute as @a[tag=g_arrow:plr_curse] at @s run tag @e[type=arrow, r=2.35] add g_arrow:curse_touch
 
 
 ## Check Altar
@@ -27,7 +27,7 @@ execute as @e[type=arrow, tag=g_arrow:valid_altar] at @s if entity @p[r=12, scor
 
 execute as @e[type=arrow, tag=g_arrow:valid_altar, scores={gdark.global.self_clock=80}] at @s if entity @p[scores={gdark.g_arrow.souls=1..}] unless entity @e[type=goldark:summon_ga] run function g_arrow/altar/activate
 
-execute as @e[type=goldark:summon_ga] at @s unless entity @e[type=arrow, tag=g_arrow:valid_altar, r=4] run kill @s
+execute as @e[type=goldark:summon_ga] at @s unless entity @e[type=arrow, tag=g_arrow:valid_altar, r=4] run function g_arrow/altar/active/stop_ritual
 
 
 ## Sacrifice Mobs & Player
