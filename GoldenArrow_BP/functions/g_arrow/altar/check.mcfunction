@@ -32,5 +32,5 @@ execute if block ~ ~ ~ skull run scoreboard players add @s gdark.g_arrow.altar_c
 
 # When all checks are triggered, the game considers it a valid altar, and a tag is added to the reference entity.
 # Otherwise, the game removes said tag to signal the altar is broken and longer valid.
-tag @s[tag=!g_arrow:valid_altar, scores={gdark.g_arrow.altar_check=14}] add g_arrow:valid_altar
-tag @s[tag=g_arrow:valid_altar, scores={gdark.g_arrow.altar_check=..13}] remove g_arrow:valid_altar
+tag @s[tag=!g_arrow:misc.valid_altar, scores={gdark.g_arrow.altar_check=14}] add g_arrow:misc.valid_altar
+tag @s[tag=g_arrow:misc.valid_altar, scores={gdark.g_arrow.altar_check=..13}] remove g_arrow:misc.valid_altar

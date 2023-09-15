@@ -12,64 +12,64 @@ scoreboard players random @s gdark.g_arrow.action_tick 1 50
 # Might have some positive impact to the Player. Curse-Lifted Players can occasionaly share these effects
 # to other Players who also have lifted their Curse already.
 execute if score @s gdark.g_arrow.action_tick matches 1 run effect @s speed 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 24 run effect @a[tag=g_arrow:curse_lift] speed 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 24 run effect @a[tag=g_arrow:player.curse_lifted] speed 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 2 run effect @s haste 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 25 run effect @a[tag=g_arrow:curse_lift] haste 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 25 run effect @a[tag=g_arrow:player.curse_lifted] haste 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 3 run effect @s strength 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 26 run effect @a[tag=g_arrow:curse_lift] strength 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 26 run effect @a[tag=g_arrow:player.curse_lifted] strength 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 4 run effect @s jump_boost 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 27 run effect @a[tag=g_arrow:curse_lift] jump_boost 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 27 run effect @a[tag=g_arrow:player.curse_lifted] jump_boost 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 5 run effect @s regeneration 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 28 run effect @a[tag=g_arrow:curse_lift] regeneration 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 28 run effect @a[tag=g_arrow:player.curse_lifted] regeneration 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 6 run effect @s resistance 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 29 run effect @a[tag=g_arrow:curse_lift] resistance 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 29 run effect @a[tag=g_arrow:player.curse_lifted] resistance 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 8 run effect @s fire_resistance 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 30 run effect @a[tag=g_arrow:curse_lift] fire_resistance 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 30 run effect @a[tag=g_arrow:player.curse_lifted] fire_resistance 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 9 run effect @s water_breathing 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 31 run effect @a[tag=g_arrow:curse_lift] water_breathing 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 31 run effect @a[tag=g_arrow:player.curse_lifted] water_breathing 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 10 run effect @s invisibility 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 32 run effect @a[tag=g_arrow:curse_lift] invisibility 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 32 run effect @a[tag=g_arrow:player.curse_lifted] invisibility 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 11 run effect @s night_vision 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 33 run effect @a[tag=g_arrow:curse_lift] night_vision 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 33 run effect @a[tag=g_arrow:player.curse_lifted] night_vision 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 12 run effect @s health_boost 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 34 run effect @a[tag=g_arrow:curse_lift] health_boost 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 34 run effect @a[tag=g_arrow:player.curse_lifted] health_boost 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 13 run effect @s absorption 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 35 run effect @a[tag=g_arrow:curse_lift] absorption 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 35 run effect @a[tag=g_arrow:player.curse_lifted] absorption 10 2 true
 
 execute if score @s gdark.g_arrow.action_tick matches 14 run effect @s saturation 100 4 true
-execute if score @s gdark.g_arrow.action_tick matches 36 run effect @a[tag=g_arrow:curse_lift] saturation 100 4 true
+execute if score @s gdark.g_arrow.action_tick matches 36 run effect @a[tag=g_arrow:player.curse_lifted] saturation 100 4 true
 
 execute if score @s gdark.g_arrow.action_tick matches 15 run effect @s slow_falling 10 2 true
-execute if score @s gdark.g_arrow.action_tick matches 37 run effect @a[tag=g_arrow:curse_lift] slow_falling 10 2 true
+execute if score @s gdark.g_arrow.action_tick matches 37 run effect @a[tag=g_arrow:player.curse_lifted] slow_falling 10 2 true
 
 
 # # NEGATIVE & DANGEROUS Effects (Debuffs)
 # Causes negative results to the Player. None of them are lethal on their own, unless their timing
 # strikes at the worst of times possible. Negative effects are never shared to other Players.
-execute if score @s gdark.g_arrow.action_tick matches 16 run effect @s[tag=g_arrow:cursed] slowness 10 1 true
+execute if score @s gdark.g_arrow.action_tick matches 16 run effect @s[tag=g_arrow:player.cursed] slowness 10 1 true
 
-execute if score @s gdark.g_arrow.action_tick matches 17 run effect @s[tag=g_arrow:cursed] mining_fatigue 10 1 true
+execute if score @s gdark.g_arrow.action_tick matches 17 run effect @s[tag=g_arrow:player.cursed] mining_fatigue 10 1 true
 
 execute if score @s gdark.g_arrow.action_tick matches 18 run effect @s nausea 10 1 true
 
-execute if score @s gdark.g_arrow.action_tick matches 19 run effect @s[tag=g_arrow:cursed] blindness 10 1 true
+execute if score @s gdark.g_arrow.action_tick matches 19 run effect @s[tag=g_arrow:player.cursed] blindness 10 1 true
 
-execute if score @s gdark.g_arrow.action_tick matches 20 run effect @s[tag=g_arrow:cursed] hunger 10 1 true
+execute if score @s gdark.g_arrow.action_tick matches 20 run effect @s[tag=g_arrow:player.cursed] hunger 10 1 true
 
-execute if score @s gdark.g_arrow.action_tick matches 21 run effect @s[tag=g_arrow:cursed] weakness 10 1 true
+execute if score @s gdark.g_arrow.action_tick matches 21 run effect @s[tag=g_arrow:player.cursed] weakness 10 1 true
 
-execute if score @s gdark.g_arrow.action_tick matches 22 run effect @s[tag=g_arrow:cursed] levitation 5 1 true
+execute if score @s gdark.g_arrow.action_tick matches 22 run effect @s[tag=g_arrow:player.cursed] levitation 5 1 true
 
 execute if score @s gdark.g_arrow.action_tick matches 23 run effect @s darkness 10 0 true
 
@@ -96,7 +96,5 @@ execute if entity @s[scores={gdark.g_arrow.action_tick=38..39}] run playsound am
 
 
 # # GLOBAL (To All Effects)
-#  Regardless of which effect is granted, a special particle is played to the cursed Player, and the code is reset.
+#  Regardless of which effect is granted, a special particle is played to the cursed Player.
 execute if entity @s[scores={gdark.g_arrow.action_tick=1..40}] run particle minecraft:totem_particle ~ ~1 ~
-
-scoreboard players reset @s gdark.g_arrow.action_tick

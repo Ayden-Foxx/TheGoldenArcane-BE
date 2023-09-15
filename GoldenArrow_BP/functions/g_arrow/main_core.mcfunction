@@ -19,4 +19,4 @@ function g_arrow/battle/curse_core
 
 
 ## MAIN - REPLACE STRAYS
-execute as @a[tag=g_arrow:cursed] at @s as @e[type=stray, r=24, rm=8] unless entity @e[type=gdark:golden_arrow] run function g_arrow/spawn_apparition
+execute as @a[tag=g_arrow:player.cursed] at @s as @e[type=stray, r=24, rm=8] unless entity @e[type=gdark:golden_arrow] run function g_arrow/spawn_apparition

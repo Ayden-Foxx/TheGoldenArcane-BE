@@ -1,12 +1,24 @@
-1 PLAYER
+* This future mechanic will define how hard/dangerous Golden Arrow is, based on how many Players are challenging them at once.
+* It also limits fights to only up to 8 players, as anything beyond that will cause G. Arrow to refuse to fight.
+* A "Hard Mode" option might be added in the future, enabling the 8-Player Mode even on Singleplayer.
+* However, some changes might be needed to be actually challenging to larger groups (who would be fighting with 8 Players anyway).
 
-2 PLAYERS
 
-3 PLAYERS
+1 PLAYER - "Fun Encounter", Primary Skills, light HEAL, 80 HP & 0.3 Speed
+- Golden Arrow disappears after a minute without nearby Players in this mode, but never due to the Player's defeat.
 
-4-5 PLAYERS
+2 PLAYERS - "Double Trouble", Primary & Secondary Skills, increased HEAL, 120HP, same speed
+- Golden Arrow despawns if both Players are dead at the same time.
 
-6-8 PLAYERS
+3-4 PLAYERS - "A True Challenge!", Primary, Secondary Skills, Special Abilities, full power HEAL, 200HP & 0.5 speed
+- When a Player dies, they'll be no longer considered in battle, and will be weakened just like any other Player. When no tagged player is alive anymore, GA despawns.
+
+5-7 PLAYERS - "Unfairness Active", Primary, Secondary & Special Skills, faster game tick, full power HEAL, 250HP & 0.8 speed
+- A special loot is spawned to all players individually in this mode, besides what is dropped from Golden Arrow on defeat.
+
+8 PLAYERS / HARD MODE - "All or Nothing", All Skills, even faster game tick, extreme HEAL (due to tick speed), 300HP & 1.0 speed (how fast is that lol)
+- A timer is also added below GA's boss bar, for one exact minute; Once the timer ends, GA disappears and all players are heavily injured.
 
 
 9+ PLAYERS: [NO FIGHT]
+- Golden Arrow has a custom line of dialog, but will not spawn. The Altar will not consume a charge with a failed summoning attempt.

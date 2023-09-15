@@ -8,7 +8,7 @@ scoreboard players add @s gdark.global.self_clock 1
 
 # # AT FIRST TICK:
 # Begin the particles, starting with one at the arrow's position.
-execute as @e[type=arrow, tag=g_arrow:valid_altar] at @s run particle minecraft:basic_smoke_particle
+execute as @e[type=arrow, tag=g_arrow:misc.valid_altar] at @s run particle minecraft:basic_smoke_particle
 
 # Inflict players with Nausea
 execute if score @s gdark.g_arrow.self_clock matches 1 run effect @a[r=18] nausea 5 0 true
@@ -16,9 +16,9 @@ execute if score @s gdark.g_arrow.self_clock matches 1 run effect @a[r=18] nause
 
 # # AT 100 TICKS: (5 secs total)
 # The ritual truly begins. All players are warned; The message depends on the player's distance to the Altar.
-execute if score @s gdark.global.self_clock matches 100 run titleraw @a[r=24] actionbar {"rawtext": [{"translate": "gdark.g_arrow.summon.begin_near"]}
+execute if score @s gdark.global.self_clock matches 100 run titleraw @a[r=24] actionbar {"rawtext": [{"translate": "gdark.g_arrow.summon.warn_near"}]}
 
-execute if score @s gdark.global.self_clock matches 100 run tellraw @a[rm=24] {"rawtext": [{"text": "§8§l[...] §r"}, {"translate": "gdark.g_arrow.summon.begin_afar"]}
+execute if score @s gdark.global.self_clock matches 100 run tellraw @a[rm=24] {"rawtext": [{"text": "§8§l[...] §r"}, {"translate": "gdark.g_arrow.summon.warn_far"}]}
 
 # Players are inflicted with Darkness, and the dummy entity receives Levitation.
 execute if score @s gdark.global.self_clock matches 100 run effect @a[r=20] darkness 8 0 true
@@ -34,7 +34,7 @@ execute if score @s gdark.global.self_clock >= 100 run particle minecraft:blue_f
 execute if score @s gdark.global.self_clock >= 100 run particle minecraft:blue_flame_particle ^-1 ^ ^1
 
 # Also create particles on the skull's position (or as close as possible)
-execute if score @s gdark.global.self_clock >= 100 at @e[type=arrow, tag=g_arrow:valid_altar] positioned ~ ~-1 ~ run particle minecraft:critical_hit_emitter
+execute if score @s gdark.global.self_clock >= 100 at @e[type=arrow, tag=g_arrow:misc.valid_altar] positioned ~ ~-1 ~ run particle minecraft:critical_hit_emitter
 
 
 # # AT 240 TICKS: (7 secs later)

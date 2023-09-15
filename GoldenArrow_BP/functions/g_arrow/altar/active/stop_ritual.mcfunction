@@ -2,9 +2,9 @@
 # It may also be called manually by functions or the player to force-stop a ritual.
 
 
-# Kill any Altar Trigger or valid arrow.
-kill @e[type=goldark:altar_trigger]
-kill @e[type=arrow, tag=g_arrow:valid_altar]
+# Stop the ongoing ritual, and remove any "valid arrow".
+kill @e[type=g_arrow:summon_ga]
+kill @e[type=arrow, tag=g_arrow:misc.valid_altar]
 
 # Plays a sound & visual effect...
 playsound mob.blaze.hit @a[r=12] 1 0.4
