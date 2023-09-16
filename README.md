@@ -19,8 +19,7 @@ Featuring:
 
 (All of the features above can be turned on/off anytime by changing the `goldark.gameContent` value in-game. For a detailed list of all possible values for any configuration, see [this](CONFIGS.md) file.)
 
----
-
 > [!IMPORTANT]
-> When first creating a world, you must run the command `/function goldark/world_setup` once. This is for setting up all variables the Addon may use.
-> *In the future, this may be done automatically, requiring no previous action from the user.*
+> When first creating a world, you must run the command `/function goldark/world_setup` *once*.
+> This will set up all the Addon needs to work properly.
+<!--Might become automatic later, though.-->
