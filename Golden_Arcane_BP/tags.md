@@ -14,8 +14,6 @@ Listed below are all of GA's used tags in-game.
 
 - `g_arrow:player.altar_learned` - The PLAYER has triggered GA's Altar at least once.
 
-- `g_arrow:player.altar_summoner` - The PLAYER to summon the current Golden Arrow instance.
-
 ## GOLDEN ARROW
 
 - `g_arrow:arrow.dashing` - Golden Arrow is mid-dash. Pauses certain effects and abilities.
