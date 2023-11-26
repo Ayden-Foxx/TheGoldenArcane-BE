@@ -1,15 +1,15 @@
-## Rarely, strays are randomly replaced with a Golden Arrow Aparition. These "doppelgängers" are weaker than the
-## original creature, and do not possess nearly as much abilities, but may still ambush unsuspecting players.
+#> Rarely, strays are randomly replaced with a Golden Arrow Aparition. These "doppelgängers" are weaker than the
+#> original creature, and do not possess nearly as much abilities, but may still ambush unsuspecting players.
 
-## Fortunately or not, only one may exist at a time, and never if the actual Golden Arrow is still present.
-## When spawning, the game announces their presence in a similar way as it announces GA's summoning.
+# * Fortunately or not, only one may exist at a time, and never if the actual Golden Arrow is still present.
+# * When spawning, the game announces their presence in a similar way as it announces GA's summoning.
 
 
 # A random number is chosen. Strays have a 1/5000 chance to become "Golden Arrow Apparitions".
-scoreboard players random @s gdark.global.self_clock 1 5000
+scoreboard players random @s goldark.global.self_clock 1 5000
 
 # Should the numbers align, a Doppelgänger is created.
-execute if entity @s[scores={gdark.global.self_clock=1}] unless entity @e[tag=g_arrow:arrow.doppelganger] run tag @s add g_arrow:arrow.doppelganger
+execute if entity @s[scores={goldark.global.self_clock=1}] unless entity @e[tag=g_arrow:arrow.doppelganger] run tag @s add g_arrow:arrow.doppelganger
 
 
 # The Doppelgänger has 40 HP (20 Hearts), +8 HP (4 Hearts) of damage, and Speeed II
@@ -29,5 +29,5 @@ execute if entity @s[tag=g_arrow:arrow.doppelganger] run replaceitem entity @e[t
 # Running away will cause them to be debuffed just like when fighting Golden Arrow,
 # but other non-cursed may still attack it with no penalties.
 # Golden Arrow also refuses to spawn while an Apparition is still alive.
-execute if entity @s[tag=g_arrow:arrow.doppelganger] run tag @a[r=24] add g_arrow:in_battle
-execute if entity @s[tag=g_arrow:arrow.doppelganger] run tellraw @a {"rawtext": [{"translate": "gdark.g_arrow.summon.passive"}]}
+execute if entity @s[tag=g_arrow:arrow.doppelganger] run tag @a[r=16] add g_arrow:player.in_battle
+execute if entity @s[tag=g_arrow:arrow.doppelganger] run tellraw @a[r=24] {"rawtext": [{"translate": "gdark.g_arrow.summon.passive"}]}

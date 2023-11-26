@@ -21,7 +21,7 @@ replaceitem entity @e[type=goldark:golden_arrow] slot.armor.feet 0 keep golden_b
 
 
 #> Multiple visual effects and sounds are played when Golden Arrow is summoned...
-# "...And the world falls apart for a brief moment, as the legendary hero rises from beyond..."
+#* "...And the world falls apart for a brief moment, as the legendary hero rises from beyond..."
 
 # Big Kaboom Particle Effect (TM)
 particle minecraft:huge_explosion_emitter
