@@ -19,17 +19,17 @@
 
 
 
-summon wolf "§8§7Luke" ^-8 ^1 ^-8
+summon wolf "§8§7Luke" ^-1 ^1 ^-1
 
 tag @e[type=wolf, name="§8§7Luke", r=12] add g_arrow:luke
 
 event entity @e[type=wolf, tag=g_arrow:luke] minecraft:entity_born
 
 
-effect @e[tag=g_arrow:luke] regeneration 999999 2 true
-effect @e[tag=g_arrow:luke] resistance 999999 1 true
-effect @e[tag=g_arrow:luke] strength 999999 0 true
-effect @e[tag=g_arrow:luke] speed 999999 0 true
+effect @e[tag=g_arrow:luke] regeneration 9999999 2 true
+effect @e[tag=g_arrow:luke] resistance 9999999 1 true
+effect @e[tag=g_arrow:luke] strength 9999999 0 true
+effect @e[tag=g_arrow:luke] speed 9999999 0 true
 
 
 execute as @e[tag=g_arrow:luke] at @s run particle minecraft:totem_particle ~ ~0.5 ~

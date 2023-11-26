@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Long ago, a newly blessed metal changed all of the world and its inhabitants completely. Now, it is your turn to inherit such powers. §o§7Made by §bAyden Foxx§7.",
+    "name": "§l§6Golden Arcane§r - §8The Fallen World",
+    "uuid": "648ddd22-a2ef-4ec0-8901-695e3efd34e8",
+    "version": [0, 2, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "description": "The ultimate pack with all of GA's Universe's features. Made by §bAyden_Foxx",
+      "type": "data",
+      "uuid": "70ce4569-4599-4acb-ada2-987f6e7dcc0a",
+      "version": [0, 2, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "eccf5bf8-e7ce-4d71-b49f-e98d86ef9e99",
+      "version": [0, 1, 0]
+    }
+  ]
+}

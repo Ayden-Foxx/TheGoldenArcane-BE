@@ -1,0 +1,134 @@
+{
+    "pools": [
+        {
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:name_tag",
+                    "weight": 10,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": "§l§6\"G_Arrow\""
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§o§6Golden Arrow's§7 true name.",
+                                "§l§1[HARD MODE DROP]"
+                            ]
+                        },
+                        {
+                            "function": "specific_enchants",
+                            "enchants": [
+                                "binding"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:netherite_sword",
+                    "weight": 8,
+                    "quality": 3,
+                    "functions": [
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "name": "Spectre Blades"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "Darkness forged its blade;",
+                                "Grief fueled its unmatched power."
+                            ]
+                        },
+                        {
+                            "function": "specific_enchants",
+                            "enchants": [
+                                {
+                                    "id": "sharpness",
+                                    "level": 4
+                                },
+                                {
+                                    "id": "fire_aspect",
+                                    "level": 2
+                                },
+                                {
+                                    "id": "mending",
+                                    "level": 1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_damage",
+                            "damage": {
+                                "min": 1.0,
+                                "max": 0.8
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.8,
+                    "looting_multiplier": 0.1
+                }
+            ],
+            "rolls": {
+                "min": 1,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:golden_apple",
+                    "weight": 8,
+                    "quality": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "minecraft:enchanted_golden_apple",
+                    "weight": 6,
+                    "quality": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 5
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
