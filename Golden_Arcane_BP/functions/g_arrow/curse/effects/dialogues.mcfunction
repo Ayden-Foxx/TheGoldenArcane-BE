@@ -89,7 +89,7 @@ execute if entity @s[scores={goldark.global.random_tick=14}, tag=g_arrow:player.
 execute if entity @s[scores={goldark.global.random_tick=14}, tag=g_arrow:player.curse_lift] run tellraw @s {"rawtext": [{"translate": "gdark.g_arrow.dialog.reject"}]}
 
 # .15 - Hot
-execute if entity @s[scores={goldark.global.random_tick=15}] if block ~ ~-1 ~ magma_block run tag @s add g_arrow:player.overheat
+execute if entity @s[scores={goldark.global.random_tick=15}] if block ~ ~-1 ~ magma run tag @s add g_arrow:player.overheat
 execute if entity @s[scores={goldark.global.random_tick=15}] if block ~ ~ ~ fire run tag @s add g_arrow:player.overheat
 execute if entity @s[scores={goldark.global.random_tick=15}] if block ~ ~ ~ lava run tag @s add g_arrow:player.overheat
 

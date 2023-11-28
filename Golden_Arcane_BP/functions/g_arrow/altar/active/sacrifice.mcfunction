@@ -15,11 +15,11 @@ effect @e[tag=g_arrow:altar.sacrifice, r=1.5] weakness 2 2 false
 effect @e[tag=g_arrow:altar.sacrifice, r=1.5] wither 1 2 false
 
 # Particles are played around the currently targeted Sacrifice.
-execute as @e[tag=g_arrow:altar.sacrifice] positioned at ~ ~1 ~ run particle minecraft:conduit_particle
+execute as @e[tag=g_arrow:altar.sacrifice] at @s run particle minecraft:conduit_particle ~ ~1 ~
 
 
 # If the entity exits the ALTAR, it's tag is removed, and the harvesting is interrupted.
-# Otherwise, if the ALTAR consumes it completely, the nearest PLAYER receives the harvested Soul.
+# Otherwise, if the ALTAR consumes it completely, the ALTAR itself receives the harvested Soul.
 execute as @e[tag=g_arrow:altar.sacrifice] unless entity @e[type=goldark:altar_spot, r=1.5] run particle minecraft:critical_hit_emitter
 execute as @e[tag=g_arrow:altar.sacrifice] unless entity @e[type=goldark:altar_spot, r=1.5] run playsound random.fizz @a[r=8] ~ ~ ~ 0.8 1
 execute as @e[tag=g_arrow:altar.sacrifice] unless entity @e[type=goldark:altar_spot, r=1.5] run scoreboard players reset @e[type=goldark:altar_spot, c=1] goldark.g_arrow.altar_check
@@ -28,12 +28,12 @@ execute as @e[tag=g_arrow:altar.sacrifice] unless entity @e[type=goldark:altar_s
 # ? For players:
 execute if score @s goldark.g_arrow.altar_check matches 1 if entity @a[tag=g_arrow:altar.sacrifice] unless entity @e[type=player, tag=g_arrow:altar.sacrifice] run particle minecraft:huge_explosion_emitter
 execute if score @s goldark.g_arrow.altar_check matches 1 if entity @a[tag=g_arrow:altar.sacrifice] unless entity @e[type=player, tag=g_arrow:altar.sacrifice] run playsound mob.endermen.stare @a[r=8] ~ ~ ~ 1 0.6
-execute if score @s goldark.g_arrow.altar_check matches 1 if entity @a[tag=g_arrow:altar.sacrifice] unless entity @e[type=player, tag=g_arrow:altar.sacrifice] run scoreboard players add @a[c=1, tag=g_arrow:player.cursed] goldark.g_arrow.altar_souls 2
+execute if score @s goldark.g_arrow.altar_check matches 1 if entity @a[tag=g_arrow:altar.sacrifice] unless entity @e[type=player, tag=g_arrow:altar.sacrifice] run scoreboard players add @s goldark.g_arrow.altar_souls 2
 execute if score @s goldark.g_arrow.altar_check matches 1 if entity @a[tag=g_arrow:altar.sacrifice] unless entity @e[type=player, tag=g_arrow:altar.sacrifice] run tag @s add g_arrow:altar.supercharge
 execute if score @s goldark.g_arrow.altar_check matches 1 if entity @a[tag=g_arrow:altar.sacrifice] unless entity @e[type=player, tag=g_arrow:altar.sacrifice] run scoreboard players reset @s goldark.g_arrow.altar_check
 
 # ? For mobs:
 execute if score @s goldark.g_arrow.altar_check matches 1 unless entity @e[tag=g_arrow:altar.sacrifice, r=8] run particle minecraft:large_explosion
 execute if score @s goldark.g_arrow.altar_check matches 1 unless entity @e[tag=g_arrow:altar.sacrifice, r=8] run playsound mob.blaze.death @a[r=8] ~ ~ ~ 1 0.6
-execute if score @s goldark.g_arrow.altar_check matches 1 unless entity @e[tag=g_arrow:altar.sacrifice, r=8] run scoreboard players add @a[c=1, tag=g_arrow:player.cursed] goldark.g_arrow.altar_souls 1
+execute if score @s goldark.g_arrow.altar_check matches 1 unless entity @e[tag=g_arrow:altar.sacrifice, r=8] run scoreboard players add @s goldark.g_arrow.altar_souls 1
 execute if score @s goldark.g_arrow.altar_check matches 1 unless entity @e[tag=g_arrow:altar.sacrifice, r=8] run scoreboard players reset @s goldark.g_arrow.altar_check

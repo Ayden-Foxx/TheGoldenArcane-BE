@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+"format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "goldark:golden_arrow",
@@ -13,7 +13,7 @@
           "priority": 0,
           "attack_interval_min": 0.5,
           "attack_interval_max": 2.0,
-          "attack_radius": 20.0
+          "attack_radius": 16.0
         },
         "minecraft:shooter": {
           "def": "minecraft:arrow",
@@ -110,16 +110,15 @@
                 {
                   "all_of": [
                     {
-                      "test": "has_tag",
+                      "test": "is_family",
                       "subject": "other",
-                      "operator": "!=",
-                      "value": "goldark:g_arrow.player.cursed"
+                      "value": "player"
                     },
                     {
                       "test": "has_tag",
                       "subject": "other",
                       "operator": "!=",
-                      "value": "goldark:g_arrow.player.curse_lift"
+                      "value": "g_arrow:player.in_battle"
                     }
                   ]
                 }
@@ -276,18 +275,17 @@
         "entity_types": [
           {
             "filters": {
-              "any_of": [
+              "all_of": [
                 {
-                  "test": "has_tag",
+                  "test": "is_family",
                   "subject": "other",
-                  "operator": "==",
-                  "value": "goldark:g_arrow.player.cursed"
+                  "value": "player"
                 },
                 {
                   "test": "has_tag",
                   "subject": "other",
                   "operator": "==",
-                  "value": "goldark:g_arrow.player.curse_lift"
+                  "value": "g_arrow:player.in_battle"
                 }
               ]
             },

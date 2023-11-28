@@ -3,11 +3,11 @@
 
 
 # Stops any ongoing ritual, and removes potential "valid arrows".
-tag @e[type=goldark:altar_spot, tag=g_arrow:altar.trigger] remove g_arrow:altar.trigger
+kill @e[type=goldark:altar_trigger, c=1]
 kill @e[type=arrow, tag=g_arrow:altar.valid_arrow, c=1]
 
 # Plays a sound & visual effect...
-playsound mob.blaze.hit @a[r=12] 1.2 0.4
+playsound mob.blaze.hit @a[r=12] ~ ~ ~ 1.2 0.4
 particle minecraft:knockback_roar_particle ~ ~1 ~
 
 # Warns players of the ritual's failure.

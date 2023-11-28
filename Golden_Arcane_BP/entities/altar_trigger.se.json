@@ -8,10 +8,21 @@
 			"is_experimental": false
 		},
 		"components": {
+			"minecraft:breathable": {
+				"breathes_water": true
+			},
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": false
+			},
 			"minecraft:custom_hit_test": {
 				"hitboxes": [
 					{
-						"pivot": [0, 100, 0],
+						"pivot": [
+							0,
+							100,
+							0
+						],
 						"width": 0,
 						"height": 0
 					}
@@ -22,8 +33,7 @@
 					"deals_damage": false
 				}
 			},
-			"minecraft:physics":{
-			},
+			"minecraft:persistent": {},
 			"minecraft:pushable": {
 				"is_pushable": false,
 				"is_pushable_by_piston": false

@@ -9,22 +9,33 @@
 
 execute as @a[tag=g_arrow:player.cursed] at @s run tag @e[type=arrow, r=2.35] add g_arrow:player.curse_touch
 
+# Armor Stands also temporarily receive this same tag for activating an Altar.
+execute as @a[tag=g_arrow:player.cursed] at @s run tag @e[type=armor_stand, r=1.5] add g_arrow:player.curse_touch
+
+execute as @e[type=armor_stand, tag=g_arrow:player.curse_touch] at @s unless entity @a[tag=g_arrow:player.cursed, r=2.5] run tag @s remove g_arrow:player.curse_touch
+
 
 #> Check Altar
-# Cursed arrows will search their surrounding terrain for a valid Golden Arrow Altar.
-# Detecting one marks the arrow as valid for summoning Golden Arrow.
+# Cursed Arrows/Armor Stands will search their surrounding terrain for a valid Golden Arrow Altar.
+# Detecting one marks the object as valid for future interactions.
 
-execute as @e[type=arrow, tag=g_arrow:player.curse_touch] at @s unless block ~ ~ ~ air run function g_arrow/altar/check
+execute as @e[tag=g_arrow:player.curse_touch] at @s unless block ~ ~ ~ air run function g_arrow/altar/check_altar
 
 
-# * From there: 
+# * From there:
+
+
+#> Activate Altar
+# An Armor Stand on a valid, yet inactive Altar activates it, allowing the Player to properly interact with the structure.
+
+execute as @e[type=armor_stand, tag=g_arrow:altar.is_valid] at @s unless entity @e[type=goldark:altar_spot, r=2] run function g_arrow/altar/activate
+
 
 #> Trigger Altar
-# When a "valid arrow" is found, the next code block handles the Altar's activation.
+# When a "valid arrow" is found, the next code block handles the Altar's triggering.
 # Should all conditions match, a new Golden Arrow is summoned from it.
 
-execute as @e[type=arrow, tag=g_arrow:altar.is_valid] at @s as @p[scores={gdark.g_arrow.altar_souls=1..}] unless entity @e[type=goldark:golden_arrow] run scoreboard players remove @s gdark.g_arrow.altar_souls 1
-execute as @e[type=arrow, tag=g_arrow:altar.is_valid] at @s if entity @p[scores={gdark.g_arrow.altar_souls=1..}] unless entity @e[type=goldark:golden_arrow] run summon goldark:altar_trigger
+execute as @e[scores={goldark.g_arrow.altar_souls=1..}] at @s if entity @e[type=arrow, tag=g_arrow:altar.is_valid, r=1] unless entity @e[type=goldark:golden_arrow] unless entity @e[type=goldark:altar_trigger] run function g_arrow/altar/check_trigger
 
 execute as @e[type=goldark:altar_trigger] at @s run function g_arrow/altar/active/trigger_arrow
 
@@ -36,14 +47,17 @@ execute as @e[type=goldark:altar_trigger] at @s unless entity @e[type=arrow, tag
 # Its soul is then rewarded to the player, allowing them to summon Golden Arrow.
 #? Some creatures also have special interactions with the Altar when sacrificed.
 
-execute as @e[type=g_arrow:altar_spot] at @s run function g_arrow/altar/sacrifice
+execute as @e[type=goldark:altar_spot] at @s run function g_arrow/altar/sacrifice
 
 
 ## Altar Check & Self Destruct
 # Every few seconds, the Altar checks itself to guarantee it is still a "valid Altar". If not, it self-destructs and drops all its remaining ingredients on the ground.
 
-scoreboard players add @e[type=goldark:altar_spot] gdark.global.self_clock 1
+scoreboard players add @e[type=goldark:altar_spot] goldark.global.self_clock 1
 
-execute as @e[type=goldark:altar_spot] if score @s gdark.global.self_clock matches 200 at @s run function g_arrow/altar/check
+execute as @e[type=goldark:altar_spot] at @s unless entity @e[type=goldark:altar_trigger] run particle minecraft:enchanting_table_particle
 
-execute as @e[type=goldark:altar_spot, tag=!goldark:altar.is_valid] at @s run function g_arrow/altar/self_destruct
+execute as @e[type=goldark:altar_spot] if score @s goldark.global.self_clock matches 200 at @s run playsound portal.portal @a[r=8] ~ ~ ~ 0.8 0.5
+execute as @e[type=goldark:altar_spot] if score @s goldark.global.self_clock matches 200 at @s run function g_arrow/altar/check_altar
+
+execute as @e[type=goldark:altar_spot, tag=!goldark:altar.is_valid] at @s run function g_arrow/altar/active/self_destruct
