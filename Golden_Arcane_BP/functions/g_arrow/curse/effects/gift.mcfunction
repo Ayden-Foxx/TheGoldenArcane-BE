@@ -42,7 +42,7 @@ execute if score @s goldark.global.random_tick matches 12 run give @s pumpkin_pi
 
 execute if score @s goldark.global.random_tick matches 13 run give @s carved_pumpkin 1
 
-execute if score @s goldark.global.random_tick matches 14 run give @s jack_o_lantern 1
+execute if score @s goldark.global.random_tick matches 14 run give @s lit_pumpkin 2
 
 execute if score @s goldark.global.random_tick matches 15 run give @s pumpkin_seeds 4
 
@@ -75,7 +75,7 @@ execute if score @s goldark.global.random_tick matches 26 run give @s golden_app
 
 execute if score @s goldark.global.random_tick matches 27 run give @s golden_carrot 3
 
-execute if score @s goldark.global.random_tick matches 28 run give @s glistened_melon_slice 3
+execute if score @s goldark.global.random_tick matches 28 run give @s glistering_melon_slice 3
 
 execute if score @s goldark.global.random_tick matches 29 run give @s blaze_powder 4
 
@@ -85,3 +85,7 @@ execute if score @s goldark.global.random_tick matches 31 run give @s magma_crea
 
 # ? Custom Item, perhaps? [Soon(tm)]
 execute if score @s goldark.global.random_tick matches 32 run give @s emerald 4
+
+
+# * RESET Random Tick after Function 
+scoreboard players reset @s goldark.global.random_tick

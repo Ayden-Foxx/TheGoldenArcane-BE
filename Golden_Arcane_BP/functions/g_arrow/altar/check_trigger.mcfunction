@@ -10,10 +10,13 @@ execute unless entity @s[scores={goldark.g_arrow.altar_souls=1..}] as @e[type=ar
 
 execute unless entity @s[scores={goldark.g_arrow.altar_souls=1..}] as @e[type=arrow, tag=g_arrow:altar.is_valid, r=1, c=1] run titleraw @p actionbar {"rawtext": [{"translate": "gdark.g_arrow.altar.no_charge"}]}
 
+execute unless entity @s[scores={goldark.g_arrow.altar_souls=1..}] as @e[type=arrow, tag=g_arrow:altar.is_valid, r=1, c=1] run give @p[m=!creative] arrow
+
 execute unless entity @s[scores={goldark.g_arrow.altar_souls=1..}] as @e[type=arrow, tag=g_arrow:altar.is_valid, r=1, c=1] run kill @s
 
 
 # ? Otherwise...
 
+execute if entity @s[scores={goldark.g_arrow.altar_souls=1..}] run summon goldark:altar_trigger ~ ~1 ~
+
 execute if entity @s[scores={goldark.g_arrow.altar_souls=1..}] run scoreboard players remove @s goldark.g_arrow.altar_souls 1
-execute if entity @s[scores={goldark.g_arrow.altar_souls=1..}] run summon goldark:altar_trigger

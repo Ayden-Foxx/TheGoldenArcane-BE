@@ -3,17 +3,20 @@
 
 
 # The classic laugh, but far more distorted now.
-playsound mob.witch.giggle @s ~ ~ ~ 1.5 0.5
+playsound mob.ravager.death @s ~ ~1 ~ 1.25 0.3
 
 # Many, many particles. We love 'em!
 particle minecraft:knockback_roar_particle ~ ~1 ~
-particle minecraft:totem_particle ~ ~1 ~
-particle minecraft:totem_particle ~ ~1 ~
+particle minecraft:knockback_roar_particle ~ ~1 ~
+particle minecraft:knockback_roar_particle ~ ~1 ~
 particle minecraft:totem_particle ~ ~1 ~
 particle minecraft:totem_particle ~ ~1 ~
 
 # The camera starts shaking...
-camerashake add @s 0.3 1 positional
+camerashake add @s 0.1 1 positional
+
+# Thunders roar everywhere...
+weather thunder
 
 # And now the player is cursed!
 tag @s add g_arrow:player.cursed

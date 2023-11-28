@@ -30,10 +30,10 @@ execute if score @s goldark.global.self_clock matches 100 run playsound wither.s
 
 # Players are inflicted with Darkness, and the dummy entity receives Levitation.
 execute if score @s goldark.global.self_clock matches 100 run effect @a[r=16] darkness 5 0 true
-execute if score @s goldark.global.self_clock matches 100 run effect @s levitation 4 1 true
+execute if entity @s[scores={goldark.global.self_clock=100..}] run tp @s ~ ~0.05 ~ true
 
 # A camera shake is also triggered to nearby players
-execute if score @s goldark.global.self_clock matches 100 run camerashake add @a[r=16] 0.08 4 positional
+execute if score @s goldark.global.self_clock matches 100 run camerashake add @a[r=16] 0.1 4 positional
 
 
 # * FROM 100 TICKS ONWARDS:
@@ -59,9 +59,9 @@ execute if score @s goldark.global.self_clock matches 160 run playsound mob.evoc
 # All things stop. The Golden Warrior rises from beyond.
 execute if score @s goldark.global.self_clock matches 180 run stopsound @a
 
-execute if score @s goldark.global.self_clock matches 195 run playsound mob.enderdragon.growl @a[r=16] ~ ~1 ~ 2.5 0.5
+execute if score @s goldark.global.self_clock matches 195 run playsound mob.enderdragon.growl @a[r=16] ~ ~1 ~ 1 0.5
 
-execute if score @s goldark.global.self_clock matches 195 as @a[tag=g_arrow:player.cursed, rm=16] at @s run playsound mob.enderdragon.growl @s ^ ^1 ^2 1.5 0.5
+execute if score @s goldark.global.self_clock matches 195 as @a[tag=g_arrow:player.cursed, rm=16] at @s run playsound mob.enderdragon.growl @s ^ ^1 ^2 0.8 0.4
 
 execute if score @s goldark.global.self_clock matches 200 run function g_arrow/summon_g_arrow
 

@@ -16,7 +16,7 @@ scoreboard objectives add goldark.g_arrow.altar_souls dummy
 
 
 # Once all is set up, the Player is notified with a nice first message :)
-playsound random.levelup @a ~ ~ ~ 1 2
+playsound random.levelup @a ~ ~ ~ 1 1.25
 particle minecraft:totem_particle ~ ~1 ~
 
 tellraw @a {"rawtext": [{"translate": "gdark.world.initialize_a"}]}

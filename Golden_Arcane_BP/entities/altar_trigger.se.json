@@ -13,7 +13,7 @@
 			},
 			"minecraft:physics": {
 				"has_gravity": true,
-				"has_collision": false
+				"has_collision": true
 			},
 			"minecraft:custom_hit_test": {
 				"hitboxes": [
@@ -37,6 +37,11 @@
 			"minecraft:pushable": {
 				"is_pushable": false,
 				"is_pushable_by_piston": false
+			},
+			"minecraft:type_family": {
+				"family": [
+					"inanimate"
+				]
 			},
 			"minecraft:collision_box": {
 				"width": 0.5,

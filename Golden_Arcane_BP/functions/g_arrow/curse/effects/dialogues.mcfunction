@@ -103,3 +103,7 @@ execute if entity @s[scores={goldark.global.random_tick=15}, tag=g_arrow:player.
 execute if entity @s[scores={goldark.global.random_tick=16}] if entity @e[family=undead, r=12] run tellraw @s {"rawtext": [{"translate": "gdark.g_arrow.dialog.protect"}]}
 
 execute if entity @s[scores={goldark.global.random_tick=16}] if entity @e[family=undead, r=12] run function g_arrow/curse/effects/protect
+
+
+# * RESET Random Tick after Function 
+scoreboard players reset @s goldark.global.random_tick

@@ -1,56 +1,68 @@
-gdark.world.initialize_a=§2==== = - §6§lGOLDEN ARCANE§r §2- = ====
+gdark.world.initialize_a=§2====== = §6§lGOLDEN ARCANE§r§2 = ======
 gdark.world.initialize_b=§o§e[*] The air is filled with a mystical energy...
 
 
-gdark.g_arrow.summon.warn_far=§8[...] §o§7The skies become deathly pale...
-gdark.g_arrow.summon.warn_nearby=§o§7The air is filled with a grim feeling...
+gdark.g_arrow.altar.no_charge=The Altar needs Soul Energy to work.
+gdark.g_arrow.altar.g_arrow_alive=§oGolden Arrow§r would not appreciate that.
+gdark.g_arrow.altar.doppelganger_alive=The Doppelgänger must be erased first.
+
+gdark.g_arrow.altar.supercharge_curse=§cPowerful Darkness binds §oGolden Arrow§r§c to this realm!
+
+gdark.g_arrow.summon.warn_far=§o§7The skies become deathly pale...
+gdark.g_arrow.summon.warn_nearby=§o§7The shadows start to whisper...
 gdark.g_arrow.summon.failed=§oThe darkness recedes...
-gdark.g_arrow.summon.successful=§c[!] §6Golden Arrow§r§7, §8Spear of §cDemise§7, rises from the darkness!
-gdark.g_arrow.summon.passive=§c[!]§7 A Fallen Apparition rises from the shadows!
+gdark.g_arrow.summon.successful=§6Golden Arrow§r, The Fallen§7 rises from the darkness!
+gdark.g_arrow.summon.passive=§7A Fallen Apparition rises from the shadows!
 
-gdark.g_arrow.battle.on_end.defeat=§c[×] All players have failed to defeat §lGolden Arrow§r§c...
-gdark.g_arrow.battle.on_end.succeed=§2§l[!] §oGolden Arrow§r§a§o has been defeated!
-gdark.g_arrow.battle.on_end.retreat=§7[×] §o§6Golden Arrow§8 returns to the Underworld...
-gdark.g_arrow.battle.on_end.lift_curse=§l§2[+] §eThe Curse§e is no longer, §lyou are free.
+gdark.g_arrow.battle.on_end.defeat=§cAll players have failed to defeat §lGolden Arrow§r§c...
+gdark.g_arrow.battle.on_end.succeed=§2§l§oGolden Arrow§r§a§o has been defeated!
+gdark.g_arrow.battle.on_end.retreat=§o§6Golden Arrow§8 returns to the Underworld...
+gdark.g_arrow.battle.on_end.lift_curse=§eThe Curse§2 is no longer, §lyou are free.
 
-gdark.g_arrow.battle.attempt_flee=§7Powerful darkness prevents you from escaping...
+gdark.g_arrow.battle.attempt_flee=§7You should not attempt to flee...
 
-gdark.g_arrow.battle.warn_atk.p_ranged=§cGolden Arrow is grinning menacingly...
-gdark.g_arrow.battle.warn_atk.s_ranged=§cGolden Arrow is grinning menacingly...
-gdark.g_arrow.battle.warn_atk.p_melee=§cYou feel darkness being poured into the world...
+gdark.g_arrow.battle.warn_atk.p_ranged=§cGolden Arrow's quiver shines with dark energy!
+gdark.g_arrow.battle.warn_atk.s_ranged=§cYou hear a familiar whistle above your head...
+gdark.g_arrow.battle.warn_atk.p_melee=§cGolden Arrow is grinning menacingly...
 gdark.g_arrow.battle.warn_atk.s_melee=§cYou feel darkness being poured into the world...
 
 gdark.g_arrow.curse.trigger_a=§7You stare into darkness...
 gdark.g_arrow.curse.trigger_b=§c...It stares back.
-gdark.g_arrow.curse.activate=§8[!] You can feel Darkness pulling in closer, and grim voices taking shape...
-gdark.g_arrow.curse.lift=[...] The old darkness now dissipates...
+gdark.g_arrow.curse.activate=§7You can feel Darkness pulling in closer, grim voices taking shape...
+gdark.g_arrow.curse.lift=§rThe old darkness now dissipates...
 
-gdark.g_arrow.dialog.dark_whisper=§8[...] §oThe shadows whisper to you... 
-gdark.g_arrow.dialog.fallen_whisper.unknown=§8[...] §o§7An eerily deep voice whispers to your very own Soul...
-gdark.g_arrow.dialog.fallen_whisper.familiar=§8[...] §o§7The Fallen Spirit whispers to your Soul...
-gdark.g_arrow.dialog.first_meeting="§cGreetings."
-gdark.g_arrow.dialog.greet="Hello."
-gdark.g_arrow.dialog.kill="§cKill them.§8"
-gdark.g_arrow.dialog.loot="Good job."
-gdark.g_arrow.dialog.watch="I see §eyou§8".
-gdark.g_arrow.dialog.summon_not_found="Find me."
-gdark.g_arrow.dialog.summon_found="§6Summon me."
-gdark.g_arrow.dialog.dance="Let's dance."
-gdark.g_arrow.dialog.bore="Boring."
+gdark.g_arrow.dialog.dark_whisper=§oThe shadows whisper to you... 
+gdark.g_arrow.dialog.first_meeting=§1Greetings.
+gdark.g_arrow.dialog.greet=Hello.
+gdark.g_arrow.dialog.kill=§cKill them
+gdark.g_arrow.dialog.loot=Good job.
+gdark.g_arrow.dialog.watch=I see §eyou.
+gdark.g_arrow.dialog.summon_not_found=Find me.
+gdark.g_arrow.dialog.summon_found=§6Summon me.
+gdark.g_arrow.dialog.dance=Let's dance.
+gdark.g_arrow.dialog.bore=Boring.
 gdark.g_arrow.dialog.illude=§7(You hear something...!)
-gdark.g_arrow.dialog.woof="Woof."
-gdark.g_arrow.dialog.blood="§cBloodshed.§8"
-gdark.g_arrow.dialog.sleep="Go to sleep."
-gdark.g_arrow.dialog.warn="§6Beware.§8"
-gdark.g_arrow.dialog.confuse="Heh... no."
-gdark.g_arrow.dialog.reject="Hah... still no."
-gdark.g_arrow.dialog.hot="Hot."
-gdark.g_arrow.dialog.protect=§7(You hear otherwordly chanting from beyond...)
-gdark.g_arrow.dialog.last_message="Farewell."
+gdark.g_arrow.dialog.woof=Woof.
+gdark.g_arrow.dialog.blood=§cBloodshed.
+gdark.g_arrow.dialog.sleep=Go to sleep.
+gdark.g_arrow.dialog.warn=§6Beware.
+gdark.g_arrow.dialog.confuse=Heh... no.
+gdark.g_arrow.dialog.reject=Hah... still no.
+gdark.g_arrow.dialog.hot=Hot.
+gdark.g_arrow.dialog.protect=§7(You feel unnaturally calm...)
+gdark.g_arrow.dialog.last_message=Farewell.
 
 gdark.g_arrow.dialog.hint_altar.cross="Cross below."
 gdark.g_arrow.dialog.hint_altar.center="Centered below."
 gdark.g_arrow.dialog.hint_altar.ring="Around and above."
 gdark.g_arrow.dialog.hint_altar.focus="Centered, above."
-gdark.g_arrow.dialog.hint_altar.shoot="§lShoot. The. §cSkull."
-gdark.g_arrow.dialog.hint_altar.recipe="Cross of GOLD; Core of GLOWSTONE; Ring of REDSTONE; A Centered SKULL..."
+gdark.g_arrow.dialog.hint_altar.shoot="§lShoot. The. §cSkull.§r"
+
+gdark.g_arrow.dialog.hint_altar.recipe=Cross of Gold, core of Glow, bloody Ring, a Skull atop...
+
+
+entity.goldark:golden_arrow.name=§6Golden Arrow§r
+entity.goldark:altar_spot.name=Altar Pointer
+entity.goldark:altar_trigger.name=Ritual Trigger
+
+item.spawn_egg.entity.goldark:golden_arrow.name=Summon §oThe Fallen§r

@@ -6,13 +6,15 @@
 # So so many particles. Kinda inverted from "curse_player.mcfunction"...
 particle minecraft:knockback_roar_particle ~ ~2 ~
 particle minecraft:knockback_roar_particle ~ ~2 ~
-particle minecraft:knockback_roar_particle ~ ~2 ~
-particle minecraft:knockback_roar_particle ~ ~2 ~
+particle minecraft:totem_particle ~ ~2 ~
 particle minecraft:totem_particle ~ ~2 ~
 particle minecraft:totem_particle ~ ~2 ~
 
 # A low-pitched bell plays to the Player.
-playsound block.bell.hit @s ~ ~1 ~ 1.5 0.5
+playsound block.bell.hit @s ~ ~2 ~ 1 0.3
+
+# The skies become clear in relief.
+weather clear
 
 # They receive a new tag, "freeing" them of their cursed burden.
 tag @s add g_arrow:player.curse_lift

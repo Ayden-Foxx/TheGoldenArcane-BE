@@ -12,4 +12,4 @@ particle minecraft:knockback_roar_particle ~ ~1 ~
 
 # Warns players of the ritual's failure.
 titleraw @a[r=16] actionbar {"rawtext": [{"translate": "gdark.g_arrow.summon.failed"}]}
-tellraw @a[rm=16, tag=g_arrow:player.cursed] {"rawtext": [{"text": "§8§l[...] §r"}, {"translate": "gdark.g_arrow.summon.failed"}]}
+tellraw @a[rm=16, tag=g_arrow:player.cursed] {"rawtext": ["", {"translate": "gdark.g_arrow.summon.failed"}]}

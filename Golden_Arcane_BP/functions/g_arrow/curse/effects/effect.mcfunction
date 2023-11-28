@@ -99,3 +99,6 @@ execute if entity @s[scores={goldark.global.random_tick=38..39}] run playsound a
 # * GLOBAL (To All Effects)
 # Regardless of which effect is granted, a special particle is played to the cursed Player.
 execute if entity @s[scores={goldark.global.random_tick=1..40}] run particle minecraft:totem_particle ~ ~1 ~
+
+# The random_tick variable is also reset.
+scoreboard players reset @s goldark.global.random_tick

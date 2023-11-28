@@ -9,7 +9,7 @@ particle minecraft:huge_explosion_emitter ~ ~1 ~
 playsound random.explode @a[r=12] ~ ~ ~ 1.5 0.4
 
 # If the ALTAR was mid-ritual, it is forced to stop.
-execute as @s[tag=g_arrow:altar.trigger] at @s run function g_arrow/altar/active/stop_ritual
+execute if entity @s[type=goldark:altar_trigger] run function g_arrow/altar/active/stop_ritual
 
 # Finally, the custom ALTAR Pointer entity is removed.
 kill @s

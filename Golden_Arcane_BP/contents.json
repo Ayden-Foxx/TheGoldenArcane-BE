@@ -1,1 +1,224 @@
-{}
+{
+   "content" : [
+      {
+         "path" : "contents.json"
+      },
+      {
+         "path" : "manifest.json"
+      },
+      {
+         "path" : "functions/g_arrow/summon_g_arrow.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/battle_modes/soon.txt"
+      },
+      {
+         "path" : "functions/g_arrow/altar/activate.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/altar/check_trigger.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/altar/check_altar.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/altar/active/self_destruct.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/curse/curse_lift.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/curse/curse_player.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/curse/effects/illusion.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/curse/effects/dialogues.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/curse/effects/summon.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/curse/effects/point_altar.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/altar/active/stop_ritual.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/curse/effects/protect.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/curse/effects/gift.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/curse/curse_core.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/altar/active/sacrifice.mcfunction"
+      },
+      {
+         "path" : ".stfolder/empty.txt"
+      },
+      {
+         "path" : "functions/g_arrow/spawn_apparition.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/battle/skills/melee/primary.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/altar/active/trigger_arrow.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/main_core.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/battle/non_battle_penalty.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/battle/passive/arrow_imbue.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/battle/passive/swap_weapons.mcfunction"
+      },
+      {
+         "path" : "entities/altar_spot.se.json"
+      },
+      {
+         "path" : "pack_icon.png"
+      },
+      {
+         "path" : "functions/g_arrow/battle/skills/melee/special.mcfunction"
+      },
+      {
+         "path" : "loot_tables/entities/golden_arrow.loot.json"
+      },
+      {
+         "path" : ".stversions/entities/golden_arrow.se.json"
+      },
+      {
+         "path" : "Docs/CHANGELOG/dev_CHANGELOG.txt"
+      },
+      {
+         "path" : "Docs/CHANGELOG/legacy_CHANGELOG.txt"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/setup.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/summon_g_arrow.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/altar/altar_core.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/altar/active/trigger_arrow.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/battle/skills/melee/secondary.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/curse/effects/gift.mcfunction"
+      },
+      {
+         "path" : "functions/g_arrow/setup.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/altar/check_altar.mcfunction"
+      },
+      {
+         "path" : ".stversions/Documentation/README.txt"
+      },
+      {
+         "path" : "loot_tables/entities/golden_arrow_hard.loot.json"
+      },
+      {
+         "path" : ".stversions/contents.json"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/main_core.mcfunction"
+      },
+      {
+         "path" : ".stversions/Documentation/CHANGELOG/legacy_CHANGELOG.txt"
+      },
+      {
+         "path" : "functions/g_arrow/curse/effects/effect.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/curse/effects/effect.mcfunction"
+      },
+      {
+         "path" : "Docs/README.txt"
+      },
+      {
+         "path" : ".stversions/manifest.json"
+      },
+      {
+         "path" : "functions/g_arrow/curse/effects/music.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/curse/effects/music.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/altar/activate.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/curse/curse_core.mcfunction"
+      },
+      {
+         "path" : "Docs/tags.md"
+      },
+      {
+         "path" : "functions/g_arrow/altar/altar_core.mcfunction"
+      },
+      {
+         "path" : ".stversions/entities/altar_spot.se.json"
+      },
+      {
+         "path" : "entities/altar_trigger.se.json"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/curse/curse_player.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/curse/effects/summon.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/curse/effects/protect.mcfunction"
+      },
+      {
+         "path" : ".stversions/entities/altar_trigger.se.json"
+      },
+      {
+         "path" : "entities/golden_arrow.se.json"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/altar/check_trigger.mcfunction"
+      },
+      {
+         "path" : ".stversions/Documentation/tags.md"
+      },
+      {
+         "path" : ".stversions/Documentation/ERROR-Log_2023-11-26_11-42.txt"
+      },
+      {
+         "path" : "functions/tick.json"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/curse/effects/dialogues.mcfunction"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/curse/curse_lift.mcfunction"
+      },
+      {
+         "path" : ".stversions/Documentation/CHANGELOG/dev_CHANGELOG.txt"
+      },
+      {
+         "path" : ".stversions/functions/g_arrow/spawn_apparition.mcfunction"
+      },
+      {
+         "path" : "loot_tables/equipment/armor_set_fallen.loot.json"
+      }
+   ],
+   "version" : 1
+}
