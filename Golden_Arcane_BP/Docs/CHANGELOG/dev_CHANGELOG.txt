@@ -80,5 +80,12 @@
 
 ## v0.2.1
 + Fixed several bugs with v0.2.0's release.
-+ Custom entity `goldark:summon_ga` renamed to `goldark:altar_trigger` to match `goldark:altar_spot`; Now both are also unaffected by water, and `altar_trigger` is properly affected by gravity.
- • ...Despite the fact the ALTAR can't be built underwater, since it requires Redstone Dust, which breaks in contact with water.
++ Updated a handful more functions & files to use `goldark` instead of the former `gdark`.
+ • Translation keys and LEGACY code are the only ones to still provide support to the `gdark` namespace.
++ Custom entity `summon_ga` renamed to `altar_trigger` to match `altar_spot`; Now both are also unaffected by water, and `altar_trigger` is properly affected by gravity.
+ • ...Despite the fact the ALTAR can't actually be built underwater, since it requires a ring of redstone dust.
++ Now Golden Arrow will ignore any player without the proper `player.in_battle`, instead of attacking any Cursed player in sight.
+ • This goes both ways too, as only in-battle Players will be able to damage Golden Arrow.
++ Added header comments to a few functions which didn't had one yet.
++ The `gift` Curse Effect has been updated (as per request from issue #1), now containing double the amount of items from before, ranging from TRASH, COMMON or even RARE drops.
+ • Golden Arrow's many pumpkin-related gifts may have some Lore implications for the future.

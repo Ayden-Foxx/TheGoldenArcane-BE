@@ -5,8 +5,8 @@
 
 # ? Most "trash" items stop appearing once the curse is broken, but rare goods will still be (rarely) gifted.
 
-scoreboard players random @s[tag=g_arrow:player.cursed] goldark.global.random_tick 1 32
-scoreboard players random @s[tag=g_arrow:player.curse_lift] goldark.global.random_tick 7 32
+scoreboard players random @s[tag=!g_arrow:player.curse_lift] goldark.global.random_tick 1 31
+scoreboard players random @s[tag=g_arrow:player.curse_lift] goldark.global.random_tick 9 32
 
 
 # * "TRASH" ITEMS - May only affect if the Player has not lifted their curse yet.
