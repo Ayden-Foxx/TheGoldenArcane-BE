@@ -31,3 +31,12 @@ Listed below are all of GA's used tags in-game.
 - `g_arrow:altar.supercharge` - A PLAYER has sacrificed themselves at an ALTAR. The next Golden Arrow instance receives the tag "lock_realm".
 
 - `g_arrow:altar.is_valid` - Declares an ALTAR as valid and ready to use. Can be used for both the Arrow and the ALTAR itself.
+
+## Naming Conventions
+
+### `ALTAR` vs `Altar`
+
+When speaking of a **GA Module**, it is referred to in CAPITALS (i.e. *ALTAR Module*);  
+When speaking of something *inside* the Module (e.g. a structure), it is referred to in Title Case (i.e. *Golden Arrow Altar*).
+
+The same goes for all other Modules.

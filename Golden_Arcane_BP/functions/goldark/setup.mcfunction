@@ -3,8 +3,9 @@
 
 
 # ? GLOBAL Variables
-scoreboard objectives add goldark.global.self_clock dummy
+scoreboard objectives add goldark.global.local_difficulty dummy
 scoreboard objectives add goldark.global.random_tick dummy
+scoreboard objectives add goldark.global.self_clock dummy
 
 
 # * Traits & Tales

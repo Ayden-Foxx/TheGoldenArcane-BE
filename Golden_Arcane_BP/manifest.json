@@ -2,7 +2,7 @@
   "format_version": 2,
   "header": {
     "description": "Once upon a time, a fallen blessing fell upon the world's most precious metal... §o§7Made by §bAyden Foxx§7.",
-    "name": "§6Golden Arcane§7 - §2[BEH. Pack]",
+    "name": "§6Golden Arcane§7 - §1[BEH. Pack]",
     "uuid": "648ddd22-a2ef-4ec0-8901-695e3efd34e8",
     "version": [0, 2, 1],
     "min_engine_version": [1, 20, 0]
@@ -18,7 +18,7 @@
   "dependencies": [
     {
       "uuid": "eccf5bf8-e7ce-4d71-b49f-e98d86ef9e99",
-      "version": [0, 1, 0]
+      "version": [0, 1, 2]
     }
   ]
 }

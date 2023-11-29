@@ -12,11 +12,11 @@ execute as @e[type=arrow, tag=g_arrow:altar.is_valid] at @s run particle minecra
 
 # Also begin the ritual with a horn sound
 # Cursed PLAYERs will hear the horn regardless of their distance to the ALTAR.
-execute if score @s goldark.g_arrow.self_clock matches 1 as @a[tag=g_arrow:player.cursed, rm=16] at @s run playsound raid.horn @a ^ ^1 ^2 1 0.5
-execute if score @s goldark.g_arrow.self_clock matches 1 run playsound raid.horn @a[r=16] ^ ^1 ^2 2 0.5
+execute if score @s goldark.global.self_clock matches 1 as @a[tag=g_arrow:player.cursed, rm=16] at @s run playsound raid.horn @a ^ ^1 ^2 1 0.5
+execute if score @s goldark.global.self_clock matches 1 run playsound raid.horn @a[r=16] ^ ^1 ^2 2 0.5
 
 # Inflict nearby players with Nausea
-execute if score @s goldark.g_arrow.self_clock matches 1 run effect @a[r=16] nausea 10 0 true
+execute if score @s goldark.global.self_clock matches 1 run effect @a[r=16] nausea 10 0 true
 
 
 # * AT 100 TICKS: (5 secs total)
@@ -30,7 +30,7 @@ execute if score @s goldark.global.self_clock matches 100 run playsound wither.s
 
 # Players are inflicted with Darkness, and the dummy entity receives Levitation.
 execute if score @s goldark.global.self_clock matches 100 run effect @a[r=16] darkness 5 0 true
-execute if entity @s[scores={goldark.global.self_clock=100..}] run tp @s ~ ~0.05 ~ true
+execute if entity @s[scores={goldark.global.self_clock=100..}] run tp @s ~ ~0.05 ~
 
 # A camera shake is also triggered to nearby players
 execute if score @s goldark.global.self_clock matches 100 run camerashake add @a[r=16] 0.1 4 positional
