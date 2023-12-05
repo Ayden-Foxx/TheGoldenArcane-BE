@@ -27,9 +27,9 @@ replaceitem entity @e[type=goldark:golden_arrow] slot.armor.feet 0 keep golden_b
 particle minecraft:huge_explosion_emitter
 
 # Nearby creatures receive damage based on distance, up to two blocks away from the Altar's central spot.
-damage @e[family=!inanimate, r=1] 12 entity_explosion entity @e[type=goldark:golden_arrow]
-damage @e[family=!inanimate, rm=1, r=2] 8 entity_explosion entity @e[type=goldark:golden_arrow]
-damage @e[family=!inanimate, rm=2, r=3] 4 entity_explosion entity @e[type=goldark:golden_arrow]
+damage @e[family=!inanimate, r=1] 12 entity_explosion entity @e[type=goldark:golden_arrow, c=1]
+damage @e[family=!inanimate, rm=1, r=2] 8 entity_explosion entity @e[type=goldark:golden_arrow, c=1]
+damage @e[family=!inanimate, rm=2, r=3] 4 entity_explosion entity @e[type=goldark:golden_arrow, c=1]
 
 # Creatures near up to three blocks are inflicted Wither III for 3 seconds.
 effect @e[family=!inanimate, r=4] wither 3 2 false
@@ -38,9 +38,9 @@ effect @e[family=!inanimate, r=4] wither 3 2 false
 execute as @a at @s run playsound mob.wither.ambient @s ^ ^ ^1 1 0.4
 camerashake add @a[r=16] 0.25 2 rotational
 
-# A tag is added to all Players up to 24 blocks away. While tagged, they cannot escape,
-# and G. Arrow despawns once all players with this tag are defeated.
-tag @a[tag=g_arrow:player.cursed, r=16] add g_arrow:player.in_battle
+# The tag `player.in_battle` is added to all Players near G. Arrow's summoning.
+# The tag prevents them from escaping the battle, and Golden Arrow despawns once all Players with this tag are defeated.
+tag @a[scores={goldark.curse_level.g_arrow=1..}, r=16] add g_arrow.player.in_battle
 
 # The Chat is warned of Golden Arrow's summoning, no matter their distance to the Altar itself.
-tellraw @a {"rawtext": [{"translate": "gdark.g_arrow.summon.successful"}]}
+tellraw @a {"rawtext": [{"translate": "gdark.on_summon.announce"}]}

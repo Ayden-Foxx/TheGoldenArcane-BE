@@ -1,68 +1,108 @@
-gdark.world.initialize_a=§2====== = §6§lGOLDEN ARCANE§r§2 = ======
-gdark.world.initialize_b=§o§e[*] The air is filled with a mystical energy...
+## ## # GOLDARK'S WORLD
+
+## INIT
+gdark.world.initialize.a=§l§9The §gGOLDEN ARCANE§r - §o§7Made by §bAyden_Foxx
+gdark.world.initialize.b=§aThanks for downloading this Addon! §2-- Foxx
+gdark.world.initialize.c=§o§eAs your first G.A. task, put a Book and a Gold Ingot together at a Crafting Table.
 
 
-gdark.g_arrow.altar.no_charge=The Altar needs Soul Energy to work.
-gdark.g_arrow.altar.g_arrow_alive=§oGolden Arrow§r would not appreciate that.
-gdark.g_arrow.altar.doppelganger_alive=The Doppelgänger must be erased first.
+## ## GOLDARK'S ALTAR & RITUAL
 
-gdark.g_arrow.altar.supercharge_curse=§cPowerful Darkness binds §oGolden Arrow§r§c to this realm!
+## Reject Ritual
+gdark.altar.reject.no_charge=§cThe Altar demands §l§4Blood§r §cto work.
+gdark.altar.reject.summon_alive=§cOnly one summoned Entity may exist at a time.
+gdark.altar.reject.doppelganger_alive=§cThe §lDoppelgänger§r §cmust be defeated first.
 
-gdark.g_arrow.summon.warn_far=§o§7The skies become deathly pale...
-gdark.g_arrow.summon.warn_nearby=§o§7The shadows start to whisper...
-gdark.g_arrow.summon.failed=§oThe darkness recedes...
-gdark.g_arrow.summon.successful=§6Golden Arrow§r, The Fallen§7 rises from the darkness!
-gdark.g_arrow.summon.passive=§7A Fallen Apparition rises from the shadows!
+## Warn Ritual status
+gdark.altar.ritual.start.near=§o§7The shadows whisper around you...
+gdark.altar.ritual.start.afar=§o§7The skies become deathly pale...
+gdark.altar.ritual.failed=§oThe darkness recedes...
 
-gdark.g_arrow.battle.on_end.defeat=§cAll players have failed to defeat §lGolden Arrow§r§c...
-gdark.g_arrow.battle.on_end.succeed=§2§l§oGolden Arrow§r§a§o has been defeated!
-gdark.g_arrow.battle.on_end.retreat=§o§6Golden Arrow§8 returns to the Underworld...
-gdark.g_arrow.battle.on_end.lift_curse=§eThe Curse§2 is no longer, §lyou are free.
+gdark.altar.ritual.near_end=§o§l§7A new form takes shape in the Darkness...
 
-gdark.g_arrow.battle.attempt_flee=§7You should not attempt to flee...
+## On Ritual end & Entity summoned
+gdark.altar.on_summon.announce=§l§6%s§r§7, rises from the darkness!
+gdark.altar.on_summon.curse_of_binding=§5Ancient forces bind §o%s§r§5 to this world!
 
-gdark.g_arrow.battle.warn_atk.p_ranged=§cGolden Arrow's quiver shines with dark energy!
-gdark.g_arrow.battle.warn_atk.s_ranged=§cYou hear a familiar whistle above your head...
-gdark.g_arrow.battle.warn_atk.p_melee=§cGolden Arrow is grinning menacingly...
-gdark.g_arrow.battle.warn_atk.s_melee=§cYou feel darkness being poured into the world...
-
-gdark.g_arrow.curse.trigger_a=§7You stare into darkness...
-gdark.g_arrow.curse.trigger_b=§c...It stares back.
-gdark.g_arrow.curse.activate=§7You can feel Darkness pulling in closer, grim voices taking shape...
-gdark.g_arrow.curse.lift=§rThe old darkness now dissipates...
-
-gdark.g_arrow.dialog.dark_whisper=§oThe shadows whisper to you... 
-gdark.g_arrow.dialog.first_meeting=§1Greetings.
-gdark.g_arrow.dialog.greet=Hello.
-gdark.g_arrow.dialog.kill=§cKill them
-gdark.g_arrow.dialog.loot=Good job.
-gdark.g_arrow.dialog.watch=I see §eyou.
-gdark.g_arrow.dialog.summon_not_found=Find me.
-gdark.g_arrow.dialog.summon_found=§6Summon me.
-gdark.g_arrow.dialog.dance=Let's dance.
-gdark.g_arrow.dialog.bore=Boring.
-gdark.g_arrow.dialog.illude=§7(You hear something...!)
-gdark.g_arrow.dialog.woof=Woof.
-gdark.g_arrow.dialog.blood=§cBloodshed.
-gdark.g_arrow.dialog.sleep=Go to sleep.
-gdark.g_arrow.dialog.warn=§6Beware.
-gdark.g_arrow.dialog.confuse=Heh... no.
-gdark.g_arrow.dialog.reject=Hah... still no.
-gdark.g_arrow.dialog.hot=Hot.
-gdark.g_arrow.dialog.protect=§7(You feel unnaturally calm...)
-gdark.g_arrow.dialog.last_message=Farewell.
-
-gdark.g_arrow.dialog.hint_altar.cross="Cross below."
-gdark.g_arrow.dialog.hint_altar.center="Centered below."
-gdark.g_arrow.dialog.hint_altar.ring="Around and above."
-gdark.g_arrow.dialog.hint_altar.focus="Centered, above."
-gdark.g_arrow.dialog.hint_altar.shoot="§lShoot. The. §cSkull.§r"
-
-gdark.g_arrow.dialog.hint_altar.recipe=Cross of Gold, core of Glow, bloody Ring, a Skull atop...
+## On Doppelgänger's natural spawning
+gdark.on_spawn.doppelganger.near=§l§5A Fallen Apparition rises from the shadows!
+gdark.on_spawn.doppelganger.afar=§l§5A Fallen Apparition materialized near the Player [§9%s§5]!
 
 
+## ## GOLDARK'S BOSS BATTLES
+
+## On Battle end & evaluation
+gdark.battle.on_end.defeat=§cAll of §l%s§r§c's challengers have been defeated...
+gdark.battle.on_end.succeed=§2§l§o%s§r§a§o has been defeated!
+
+gdark.battle.on_end.lift_curse=§eThe Curse§a has been lifted, §lyou are now free.
+
+## A Player attempts to escape the fight
+gdark.battle.attempt_flee=§cYou cannot run away from a battle with the §l§6Golden Warriors.
+
+
+## # G. ARROW-SPECIFIC DIALOGUE
+
+## Warn the next attack
+gdark.battle.g_arrow.prepare_atk.primary=§gGolden Arrow prepares a STRONG %s attack...
+gdark.battle.g_arrow.prepare_atk.secondary.melee=§cYou hear a distant battle cry...
+gdark.battle.g_arrow.prepare_atk.secondary.ranged=§cThe skies begin to darken...
+gdark.battle.g_arrow.prepare_atk.tertiary=§5Golden Arrow is preparing something grim...	## DARK Mode Exclusive
+
+
+## ## GOLDEN ARROW'S CURSE & DIALOGUE
+
+## On Curse activation & deactivation
+gdark.g_arrow.curse.on_trigger.a=§7You stare into darkness...
+gdark.g_arrow.curse.on_trigger.b=§c...It stares back.
+gdark.g_arrow.curse.on_trigger.c=§cYou feel Darkness pulling in closer, grim voices taking shape...
+gdark.g_arrow.curse.on_trigger.d=§o§7The shadows whisper to you... 
+
+gdark.g_arrow.curse.on_lift=§oThe old darkness now dissipates...
+
+
+## # Curse Messages
+
+## First time (when Player is Cursed)
+gdark.g_arrow.curse.dialog.first_meeting=§4Greetings.§r
+
+## Random (from Curse's effects)
+gdark.g_arrow.curse.dialog.greet=Hello.
+gdark.g_arrow.curse.dialog.kill=§cKill them
+gdark.g_arrow.curse.dialog.loot=Good job.
+gdark.g_arrow.curse.dialog.watch=I see §eyou.
+gdark.g_arrow.curse.dialog.summon_not_found=Find me.
+gdark.g_arrow.curse.dialog.summon_found=§6Summon me.
+gdark.g_arrow.curse.dialog.dance=Let's dance.
+gdark.g_arrow.curse.dialog.bore=Boring.
+gdark.g_arrow.curse.dialog.illude=§7(You hear something...!)
+gdark.g_arrow.curse.dialog.woof=Woof.
+gdark.g_arrow.curse.dialog.blood=§cBloodshed.
+gdark.g_arrow.curse.dialog.sleep=Go to sleep.
+gdark.g_arrow.curse.dialog.warn=§gBeware.
+gdark.g_arrow.curse.dialog.hot=Hot.
+gdark.g_arrow.curse.dialog.protect=§7(You feel unnaturally calm...)
+
+## When the Curse is lifted
+gdark.g_arrow.curse.dialog.last_message=§6Farewell.
+
+
+## # G. ARROW'S ALTAR HINTS
+
+gdark.g_arrow.dialog.altar_recipe.cross="Cross below."
+gdark.g_arrow.dialog.altar_recipe.center="Centered below."
+gdark.g_arrow.dialog.altar_recipe.ring="Around and above."
+gdark.g_arrow.dialog.altar_recipe.focus="Centered, above."
+gdark.g_arrow.dialog.altar_recipe.shoot="§lShoot. The. §cSkull.§r"
+
+gdark.g_arrow.dialog.altar_recipe.full=§o§eCross of Gold, core of Glow, bloody Ring, a Skull atop...
+
+
+## ## # ADDON ENTITIES
 entity.goldark:golden_arrow.name=§6Golden Arrow§r
-entity.goldark:altar_spot.name=Altar Pointer
-entity.goldark:altar_trigger.name=Ritual Trigger
+entity.goldark:golden_knight.name=§eGolden Knight§r
+entity.goldark:golden_trinity.name=§gGolden Trinity§r
+entity.goldark:golden_ranger.name=§gGolden Ranger§r
 
-item.spawn_egg.entity.goldark:golden_arrow.name=Summon §oThe Fallen§r
+entity.goldark:altar_spot.name=§eGolden Altar§r
+entity.goldark:altar_trigger.name=§dRitual Trigger§r

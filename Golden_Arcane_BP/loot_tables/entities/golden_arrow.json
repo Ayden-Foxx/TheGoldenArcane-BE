@@ -36,7 +36,10 @@
                         {
                             "function": "specific_enchants",
                             "enchants": [
-                                "binding"
+                                {
+                                    "id": "binding",
+                                    "level": 1
+                                }
                             ]
                         }
                     ]
@@ -54,8 +57,8 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                "§7Empowered by §eholy powers",
-                                "§7from an ancient oath..."
+                                "§7Empowered by §eholy powers§7",
+                                "§7from an §bancient oath...§7"
                             ]
                         },
                         {
