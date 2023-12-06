@@ -1,4 +1,4 @@
-#> >> GOLDEN ARCANE -- By Ayden_Foxx <<
+#> > >> * GOLDEN ARCANE -- By Ayden_Foxx * << <
 #> This file runs all CORE Functions from G. Arcane's Modules.
 #> Optionally, one may disable these by editing the fake Player
 #> `ga_world`'s respective scoreboard value.

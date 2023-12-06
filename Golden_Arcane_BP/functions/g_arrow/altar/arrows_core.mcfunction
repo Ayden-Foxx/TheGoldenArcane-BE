@@ -1,10 +1,10 @@
-#> > > CORE of G. ARROW's ALTAR Module < <
+#> >> > CORE of G. ARROW's ALTAR Module < <<
 #> This is where all of the Module's files and Functions interact,
 #> creating the actual Altar Object Players interact with in-game.
 #> ----------------------------------------------------------------
 
-# ? Since all of the actual code is located at GoldArk/ALTAR_CORE,
-# ? this Function simply manages Golden Arrow's summoning.
+# ? Since all of the Altar's code is located at GoldArk/ALTAR_CORE,
+# ? this Function simply manages Golden Arrow's own summoning.
 
 
 #> G_Arrow/RUN_RITUAL -> Trigger Altar

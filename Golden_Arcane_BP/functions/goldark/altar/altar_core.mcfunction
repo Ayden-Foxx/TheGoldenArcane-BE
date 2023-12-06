@@ -1,4 +1,4 @@
-#> > > CORE of GOLDARK's ALTAR Module < <
+#> >> > CORE of GOLDARK's ALTAR Module < <<
 #> This is where all of the Module's files and Functions interact,
 #> creating the actual Altar Object Players interact with in-game.
 #> ----------------------------------------------------------------
