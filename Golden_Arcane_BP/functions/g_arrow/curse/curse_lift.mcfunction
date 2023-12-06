@@ -1,9 +1,10 @@
 #> After defeating Golden Arrow in a (hopefully) fair fight, the Player is "lifted" off their curse.
 #> Truth is, Golden Arrow never leaves them; The Player merely earns their respect.
 #> After winning a battle this way, the Player might still have positive effects, though...
+#> -------------------------------------------------------------------------------------------------
 
 
-# So so many particles. Kinda inverted from "curse_player.mcfunction"...
+# So so many particles. Kinda inverted from CURSE_PLAYER...
 particle minecraft:knockback_roar_particle ~ ~2 ~
 particle minecraft:knockback_roar_particle ~ ~2 ~
 particle minecraft:totem_particle ~ ~2 ~
@@ -17,7 +18,7 @@ playsound block.bell.hit @s ~ ~2 ~ 1 0.3
 weather clear
 
 # Their Curse Level is updated, relieving them of the Curse's darkness.
-scoreboard players set @s goldark.curse_level.g_arrow 2
+scoreboard players set @s goldark.curse_level.g_arrow 3
 
 # This does not, however, actually *lift* the Curse itself.
 # It will always be there as a reminder of the past.

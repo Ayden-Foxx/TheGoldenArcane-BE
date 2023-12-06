@@ -1,18 +1,19 @@
 #> On rare occasions, Golden Arrow might send a cursed foe to the Player.
 #> This creature is mostly harmless and simply scares the Player, but their
-#> inconvenience may prove deadly when in an actual serious fight.
+#> inconvenience may prove deadly while in an actual serious fight.
+#> ------------------------------------------------------------------------
 
 
-scoreboard players random @s goldark.global.random_tick 1 8
+scoreboard players random @s goldark.random_tick 1 8
 
 # With a 50/50 chance for either demons or nothing...
-execute if score @s goldark.global.random_tick matches 1 if block ^-1 ^ ^-8 air positioned ^-1 ^ ^-8 run summon silverfish "§kFallen PLAGUE§r"
+execute if score @s goldark.random_tick matches 1 if block ^-1 ^ ^-8 air positioned ^-1 ^ ^-8 run summon silverfish "§kFallen PLAGUE§r"
 
-execute if score @s goldark.global.random_tick matches 2 if block ^-1 ^ ^-8 air if block ^-1 ^2 ^-8 air positioned ^-1 ^ ^-8 run summon stray "§kFallen PLAGUE§r"
+execute if score @s goldark.random_tick matches 2 if block ^-1 ^ ^-8 air if block ^-1 ^2 ^-8 air positioned ^-1 ^ ^-8 run summon stray "§kFallen PLAGUE§r"
 
-execute if score @s goldark.global.random_tick matches 3 if block ^-1 ^ ^-8 air positioned ^-1 ^ ^-8 run summon spider "§kFallen PLAGUE§r"
+execute if score @s goldark.random_tick matches 3 if block ^-1 ^ ^-8 air positioned ^-1 ^ ^-8 run summon spider "§kFallen PLAGUE§r"
 
-execute if score @s goldark.global.random_tick matches 4 if block ^-1 ^ ^-8 air positioned ^-1 ^ ^-8 run summon drowned "§kFallen PLAGUE§r"
+execute if score @s goldark.random_tick matches 4 if block ^-1 ^ ^-8 air positioned ^-1 ^ ^-8 run summon drowned "§kFallen PLAGUE§r"
 
 
 # The PLAGUE spawns with some particles indicating its location.

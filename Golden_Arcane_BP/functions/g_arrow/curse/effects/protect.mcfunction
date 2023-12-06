@@ -1,6 +1,6 @@
 #> When too many creatures approach the Player, Golden Arrow has a chance
-#> to simply remove all hostile creatures in a large radius like the pile
-#> of nothingness they all are... oops.
+#> to simply remove all hostile creatures in a large radius around them.
+#> ----------------------------------------------------------------------
 
 
 # A particle is played on the protected player.
@@ -16,5 +16,5 @@ execute as @e[family=monster, r=16] at @s run effect @s wither 20 4 false
 execute as @e[family=monster, r=16] at @s run tp @s ^ ^-8 ^-1
 
 # Arrows are also destroyed wherever they are. (Unless they're being used in a Golden Arrow ALTAR)
-execute as @e[type=arrow, tag=!g_arrow:altar.is_valid, r=16] at @s run particle minecraft:large_explosion
-kill @e[type=arrow, tag=!g_arrow:altar.is_valid, r=16]
+execute as @e[type=arrow, tag=!goldark.altar.is_valid, r=16] at @s run particle minecraft:large_explosion
+kill @e[type=arrow, tag=!goldark.altar.is_valid, r=16]
