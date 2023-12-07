@@ -43,4 +43,4 @@ camerashake add @a[r=16] 0.25 2 rotational
 tag @a[scores={goldark.curse_level.g_arrow=1..}, r=16] add g_arrow.player.in_battle
 
 # The Chat is warned of Golden Arrow's summoning, no matter their distance to the Altar itself.
-tellraw @a {"rawtext": [{"translate": "gdark.on_summon.announce"}]}
+tellraw @a {"rawtext": [{"translate": "gdark.on_summon.announce", "with": [ "Golden Arrow" ]}]}
