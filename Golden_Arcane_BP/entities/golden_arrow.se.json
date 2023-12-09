@@ -1,5 +1,5 @@
 {
-"format_version": "1.16.0",
+  "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
       "identifier": "goldark:golden_arrow",
@@ -131,8 +131,8 @@
       "minecraft:equip_item": {},
       "minecraft:fire_immune": {},
       "minecraft:health": {
-        "value": 100,
-        "max": 100
+        "value": 120,
+        "max": 120
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/golden_arrow.json"
@@ -140,10 +140,12 @@
       "minecraft:movement": {
         "value": 0.3
       },
-      "minecraft:navigation.walk": {
+      "minecraft:navigation.generic": {
         "is_amphibious": true,
-        "avoid_sun": true,
-        "avoid_water": true
+        "can_path_over_water": false,
+        "can_swim": true,
+        "can_walk": true,
+        "avoid_sun": true
       },
       "minecraft:movement.basic": {},
       "minecraft:jump.static": {},

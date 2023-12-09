@@ -1,18 +1,38 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Contains dialogues, textures, and entity models for the §6Golden Arcane§r. Made by §bAyden_Foxx",
-    "name": "§6Golden §eArcane§7 - §2[RES. Pack]",
-    "uuid": "eccf5bf8-e7ce-4d71-b49f-e98d86ef9e99",
-    "version": [0, 1, 0],
-    "min_engine_version": [1, 20, 0]
+    "name": "§9The §eGolden Arcane §r| §aRP",
+    "description": "§7Discover a forbidden Magic within the world, and those before you who fell into darkness trying to harness it.",
+    "uuid": "a6dfa043-aa88-4f49-a070-3cf0b924b9a6",
+    "version": [
+      0,
+      3,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
   },
   "modules": [
     {
-      "description": "Adds client-side data for the §lGolden Arcane§r. Made by §bAyden_Foxx",
       "type": "resources",
-      "uuid": "0d4c07c0-ecca-4dbc-af49-aa3b84915e60",
-      "version": [0, 1, 0]
+      "description": "_",
+      "uuid": "a92d3b06-609d-47e2-94a5-d423ecfa2575",
+      "version": [
+        0,
+        3,
+        0
+      ]
     }
-  ]
+  ],
+  "capabilities": {
+    "experimental_custom_ui": false,
+    "chemistry": false
+  },
+  "metadata": {
+    "authors": ["Ayden_Foxx"],
+    "url": "https://github.com/Ayden-Foxx/GoldenArcane"
+  }
 }

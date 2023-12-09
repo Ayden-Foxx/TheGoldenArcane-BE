@@ -1,24 +1,48 @@
 {
   "format_version": 2,
   "header": {
-    "description": "Once upon a time, a fallen blessing fell upon the world's most precious metal... §o§7Made by §bAyden Foxx§7.",
-    "name": "§6Golden Arcane§7 - §2[BEH. Pack]",
-    "uuid": "648ddd22-a2ef-4ec0-8901-695e3efd34e8",
-    "version": [0, 2, 1],
-    "min_engine_version": [1, 20, 0]
+    "name": "§9The §eGolden Arcane §r| §bBP",
+    "description": "Discover a forbidden Magic within the world, and those before you who fell into darkness trying to harness it.",
+    "uuid": "0ff82540-3b11-4871-86dd-baf398b12ec8",
+    "version": [
+      0,
+      3,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
   },
   "modules": [
     {
-      "description": "The ultimate pack with all of GA Universe's features. Made by §bAyden_Foxx",
       "type": "data",
-      "uuid": "70ce4569-4599-4acb-ada2-987f6e7dcc0a",
-      "version": [0, 2, 1]
+      "description": "_",
+      "uuid": "fc39a28e-d4ba-475b-8f45-3b10c65037f2",
+      "version": [
+        0,
+        3,
+        0
+      ]
     }
   ],
   "dependencies": [
     {
-      "uuid": "eccf5bf8-e7ce-4d71-b49f-e98d86ef9e99",
-      "version": [0, 1, 0]
+      "uuid": "a6dfa043-aa88-4f49-a070-3cf0b924b9a6",
+      "version": [
+        0,
+        3,
+        0
+      ]
     }
-  ]
+  ],
+  "capabilities": {
+    "experimental_custom_ui": false,
+    "chemistry": false
+  },
+  "metadata": {
+    "authors": "Ayden_Foxx",
+    "url": "https://github.com/Ayden-Foxx/GoldenArcane"
+  }
 }

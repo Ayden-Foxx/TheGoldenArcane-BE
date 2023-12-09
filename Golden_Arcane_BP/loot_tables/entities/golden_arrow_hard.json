@@ -22,13 +22,16 @@
                             "function": "set_lore",
                             "lore": [
                                 "§o§6Golden Arrow's§7 true name.",
-                                "§l§1[HARD MODE DROP]"
+                                "§l§5[HARD MODE DROP]"
                             ]
                         },
                         {
                             "function": "specific_enchants",
                             "enchants": [
-                                "binding"
+                                {
+                                    "id": "binding",
+                                    "level": 1
+                                }
                             ]
                         }
                     ]

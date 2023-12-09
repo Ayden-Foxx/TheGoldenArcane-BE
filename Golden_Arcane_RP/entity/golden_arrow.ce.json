@@ -16,19 +16,12 @@
                 "default": "geometry.skeleton.stray.v1.8",
                 "overlay": "geometry.stray.armor.v1.8"
             },
-            "spawn_egg": {
-                "base_color": "#581845",
-                "overlay_color": "#FFC300"
-            },
             "scripts": {
                 "pre_animation": [
                     "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
                 ]
             },
             "animations": {
-                "look_at_target_default": "animation.humanoid.look_at_target.default",
-                "look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
-                "look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
                 "move": "animation.humanoid.move",
                 "riding.arms": "animation.humanoid.riding.arms",
                 "riding.legs": "animation.humanoid.riding.legs",

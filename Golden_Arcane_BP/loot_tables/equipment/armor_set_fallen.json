@@ -9,8 +9,9 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "enchant_random_gear",
-                            "chance": 1
+                            "function": "enchant_with_levels",
+                            "levels": 25,
+                            "treasure": true
                         },
                         {
                             "function": "set_name",
@@ -35,8 +36,9 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "enchant_random_gear",
-                            "chance": 1
+                            "function": "enchant_with_levels",
+                            "levels": 25,
+                            "treasure": true
                         },
                         {
                             "function": "set_name",
@@ -62,8 +64,9 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "enchant_random_gear",
-                            "chance": 1
+                            "function": "enchant_with_levels",
+                            "levels": 25,
+                            "treasure": true
                         },
                         {
                             "function": "set_name",
@@ -72,7 +75,7 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                "It's oddly well protected..."
+                                "It's very well protected..."
                             ]
                         }
                     ]
@@ -88,8 +91,9 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "enchant_random_gear",
-                            "chance": 1
+                            "function": "enchant_with_levels",
+                            "levels": 25,
+                            "treasure": true
                         },
                         {
                             "function": "set_name",
