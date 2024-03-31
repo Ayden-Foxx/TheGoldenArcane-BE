@@ -1,3 +1,10 @@
+> [!WARNING]
+> This project is currently NOT being worked on; As a solo dev with far too high ambitions, I have yet to decide on what to actually work on with this project, as well as deciding whether to keep it on Bedrock (as an Addon), or rewrite it for Java (as a datapack), as my own needs and interests shift between both platforms.  
+> If possible, both might be done in the future, albeit perhaps with some minor differences (as it always is with Bedrock and Java), due to how commands work in each version, and the obvious differences of Addons and datapacks' capabilities.  
+> Until then, this project is (unfortunately) on hold as an incomplete (and very buggy) ~mess~ product.  
+
+---
+
 !["The Golden Arcane Official Logo"](assets/ga_logo_smooth.png "GoldArk's Logo")
 
 # 🌟 Same world, a new magic
